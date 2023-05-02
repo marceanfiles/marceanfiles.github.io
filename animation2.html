@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Animation</title>
+	<style>
+		body {
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			background-attachment: fixed;
+			position: relative;
+		}
+		.fade-in {
+			animation: fade-in 1s ease-out;
+		}
+		@keyframes fade-in {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
+		h1 {
+			position: absolute;
+			top: 10%;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 3em;
+			color: red;
+			text-align: center;
+		}
+		p {
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			font-size: 2em;
+			color: black;
+			text-align: center;
+		}
+		p strong {
+			background-color: yellow;
+			padding: 0.2em 0.5em;
+			border-radius: 0.5em;
+		}
+	</style>
+</head>
+<body background="animation/bg.jpg">
+	<h1 class="fade-in">YOUR INTERNET DATA HAS EXPIRED</h1>
+	<p><strong>Dear Client, your internet connection is put on hold. Please settle your monthly dues ASAP. You may contact us through this number 09552504734 or look for Mercy.</strong> </p>
+	<br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<marquee direction="right" scrollamount="15">
+		<img src="animation/a.gif" width="22%" />&emsp;&emsp;&emsp;
+		<img src="animation/b.gif" width="11%" />&emsp;
+		<img src="animation/c.gif" width="4%" />&nbsp;
+	</marquee>
+</body>
+</html>
